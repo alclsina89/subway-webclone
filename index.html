@@ -7,6 +7,9 @@
     <link rel="icon" href="images/subway_favicon.ico" type="image/x-icon">
     
     <title>SUBWAY 써브웨이</title>
+
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body> 
     <div id="wrap">
@@ -15,21 +18,7 @@
                 <h1 class="logo">
                     <a href="#">SUBWAY</a>
                 </h1>
-                <nav class="util_manu">
-                    <ul>
-                        <li>
-                            <a href="#">로그인</a>
-                        </li>
-                        <li>
-                            <a href="#">회원가입</a>
-                        </li>
-                        <li class="icon_menu global_subway">
-                            <a href="#" target="_blank" title="Global Subway">
-                                <span class="blind">Global Subway</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav><!-- // <nav class="util_manu"> end-->
+                <!--네비 메뉴 시작-->
                 <nav id="gnb"><!-- // nav start-->
                     <ul>
                         <li>
@@ -148,11 +137,27 @@
                         </li>
                     </ul>
                 </nav><!--<nav id="gnb"> end-->
+                <!--join,login 시작-->
+                <nav class="util_manu">
+                    <ul>
+                        <li class="before_sign">
+                            <a href="#">로그인</a>
+                        </li>
+                        <li class="before_sign">
+                            <a href="#">회원가입</a>
+                        </li>
+                        <li class="icon_menu global_subway">
+                            <a href="#" target="_blank" title="Global Subway">
+                                <span class="blind">Global Subway</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav><!-- // <nav class="util_manu"> end-->
             </div>
         </header>
         <!--20.10.08-->
-        <main id="container">
-            <section class="main_event_slide">
+        <main id="container" class="main_wrapper">
+            <section class="main_tap_event_wrapper">
                 <article class="bx-wrapper">
                     <!--bx slider 들어갈 자리-->
                     <!--backgroundimg로 처리예정-->
@@ -176,7 +181,7 @@
                         </div>
                     </div>
                 </article><!-- // <article class="quick_link"> end-->
-            </section><!--<section class="main_event_slide"> end-->
+            </section><!--<section class="main_tap_event_wrapper"> end-->
 
                 <!--20.10.08 15:09 <section class="subway_menu"> 추가-->
             <section class="subway_menu">
@@ -719,7 +724,7 @@
                     </ul>
                 </article>
             </section> <!-- // <section class="quick_menu"> end-->
-        </main>
+        </main><!-- // <main id="container" class="main_wrapper"> end-->
         <!--20.10.08-->
         <footer>
             <section class="content">

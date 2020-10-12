@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+/* font */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
+/**********************************************/
+
+/*** reset start ***/
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 120%;
+}
+html, body {
+    background-color: #fff;
+}
+body {
+    display: block;
+    font-size: 16px;
+    color: #666666;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+ol, ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+nav {
+    display: block;
+}
+/*** reset end ***/
+div#wrap{
+    position: relative;
+    min-width: 1280px;
+}
+header {
+    border-top: 5px solid #009233;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    min-height: 1280px;
+}
+header::after {
+    content: '';
+    position: absolute;
+    top: 164px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+}
+div.content {
+    max-width: 1170px;
+    margin: 0 auto;
+    line-height: 120%;
+}
+header >div.content >h1.logo {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    margin-left: -101px;
+    transition-duration: 0.3s;
+}
+header>div.content>h1.logo a {
+    display: block;
+    background: url(../images/logo_w.png) 0 0 no-repeat;
+    width: 202px;
+    height: 40px;
+    overflow: hidden;
+    font-size: 0;
+    text-indent: -99999px;
+}
+/***gnb메뉴 시작***/
+div#wrap >header >div.content >nav#gnb {
+    position: absolute;
+    left: 0;
+    top: 98px;
+    width: 100%;
+    text-align: center;
+}
+div#wrap >header >div.content >nav#gnb >ul {
+    display: inline-block;
+}
+div#wrap >header >div.content >nav#gnb >ul >li {
+    float: left;
+    position: relative;
+    width: 165px;
+}
+div#wrap >header >div.content >nav#gnb >ul >li a {
+    transition-duration: 0.2s;
+}
+#gnb >ul >li a.nv1 {
+    font-size: 18px;
+    color: #292929;
+    font-weight: bold;
+    letter-spacing: -0.04em;
+    position: relative;
+    z-index: 3;
+    padding-top: 20px;
+    display: block;
+}
+#gnb >ul >li div.nv2 {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding-top: 87px;
+    z-index: 2;
+    /* script 적용
+        top: -20px; 
+        opacity: 0; 
+    */
+}
+#gnb >ul >li div.nv2 >ul >li >a {
+    display: block;
+    padding: 8px 0 9px;
+    font-size: 15px;
+    color: #666666;
+    letter-spacing: -0.05em;
+}
+#gnb >ul >li a.nv1, #gnb .nv2 ul li a {
+    transition-duration: 0.2s;
+}
+
+/*** join,login 시작 ***/
+div#wrap >header >div.content >nav.util_manu {
+    position: absolute;
+    right: 25px;
+    top: 40px;
+}
+div#wrap >header >div.content >nav.util_manu ul li {
+    float: left;
+    position: relative;
+}
+div#wrap >header >div.content >nav.util_manu ul li a {
+    display: block;
+    height: 30px;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 30px;
+    color: #666666;
+}
+/* ~(틸드) ~와~사이에*/
+#wrap >header >div.content >nav.util_manu li ~ li {
+    margin-left: 30px;
+}
+#wrap >header >div.content >nav.util_manu .before_sign ~ .before_sign::before {
+    content: '';
+    display: block;
+    background-color: #ddd;
+    border-radius: 50px;
+    position: absolute;
+    left: -16px;
+    top: 50%;
+    margin-top: -2px;
+    height: 3px;
+    width: 3px;
+}
+#wrap >header >div.content >nav.util_manu >ul >li.icon_menu {
+    position: relative;
+}
+#wrap >header >div.content >nav.util_manu >ul >li.global_subway {
+    margin-left: 15px;
+}
+#wrap >header >div.content >nav.util_manu >ul >li.icon_menu a {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    line-height: 0;
+    width: 30px;
+}
+#wrap >header >div.content >nav.util_manu >ul >li.global_subway a {
+    background-image: url('../images/icon_utill_global.png');
+}
+#wrap >header >div.content >nav.util_manu >ul >li >a >span.blind {
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    height: 0;
+    width: 0;
+}
+/*** main event tap ***/
+main.main_wrapper {
+    background: url('../images/bg_content.gif') 0 0 repeat;
+}
+main#container {
+    position: relative;
+    /* margin-top: 170px; */
+    margin-top: 0px !important;
+    padding-top: 170px;
+}
