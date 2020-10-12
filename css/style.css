@@ -20,8 +20,10 @@ body {
     color: #666666;
     font-family: 'Noto Sans KR', sans-serif;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
     font-weight: normal;
+    margin: 0;
+    padding: 0;
 }
 ol, ul {
     list-style: none;
@@ -58,9 +60,10 @@ header::after {
     background-color: #e5e5e5;
 }
 div.content {
+    position: relative;
     max-width: 1170px;
     margin: 0 auto;
-    line-height: 120%;
+    /* line-height: 120%; */
 }
 header >div.content >h1.logo {
     position: absolute;
@@ -196,4 +199,117 @@ main#container {
     /* margin-top: 170px; */
     margin-top: 0px !important;
     padding-top: 170px;
+}
+main >section.main_tap_event_wrapper {
+    position: relative;
+    height: 490px;
+    background-color: #fff;;
+}
+
+
+/***footer***/
+footer {
+    position: relative;
+    padding: 22px 0;
+    background-color: #292929;
+    color: #666666;
+    z-index: 9;
+}
+footer >section.content {
+    position: relative;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+footer >section.content >article.footer_menu {
+    margin-bottom: 25px;
+}
+footer >section.content >article.footer_menu >ul {
+    overflow: hidden;
+}
+footer >section.content >article.footer_menu >ul >li {
+    float: left;
+    margin-right: 29px;
+}
+footer >section.content >article.footer_menu >ul >li >a {
+    display: block;
+    font-size: 14px;
+    letter-spacing: -0.05em;
+    color: #666666;
+}
+footer .content .footer_menu li a strong {
+    color: #bbbbbb;
+}
+footer >section.content >article.footer_menu >ul >li >a.eng {
+    letter-spacing: 0.05em;
+}
+footer .content p {
+    position: relative;
+    display: inline-block;
+    margin-top: 19px;
+    font-size: 13px;
+    padding-left: 9px;
+    margin-left: 3px;
+    letter-spacing: -0.01em;
+}
+footer .content p::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 2px;
+    height: 10px;
+    background-color: #666666;
+}
+footer .content p.addr {
+    padding-left: 0;
+    margin-left: 0;
+}
+footer .content p.addr:after {
+    display: none;
+}
+footer .content span.copyright {
+    /* font-family: font_sw; */
+    display: inline-block;
+    font-size: 13px;
+    line-height: 25px;
+    padding-top: 2px;
+    letter-spacing: 0.005em;
+}
+
+/***footer sns***/
+footer .content .sns_area {
+    position: absolute;
+    right: 40px;
+    bottom: 3px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    text-indent: -99999px;
+    font-size: 0;
+    line-height: 0;
+}
+footer .content .instagram {
+    background: url('../images/icon_sns_instar.png') 0 0 no-repeat;
+    right: 105px;
+}
+footer .content .facebook {
+    background: url('../images/icon_sns_facebook.png') 0 0 no-repeat;
+    /* right: 0; */
+}
+footer .content .sns_area:after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    display: block;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+footer::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 59px;
+    width: 100%;
+    height: 1px;
+    background-color: #3b3b3b;
 }
