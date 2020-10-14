@@ -221,11 +221,12 @@ main >section >article.quick_link >div.quick_link_content {
     float: right;
     display: table;
 }
-div.quick_link_content >div.store {
+.main_tap_event_wrapper .quick_link .quick_link_content >div {
     display: table-cell;
     vertical-align: bottom;
     height: 80px;
 }
+/*store*/
 .main_tap_event_wrapper .quick_link .quick_link_content .store a {
     display: block;
     width: 300px;
@@ -252,7 +253,7 @@ div.quick_link_content div.store a {
 .main_tap_event_wrapper .quick_link .quick_link_content >div a >strong {
     font-size: 22px;
     font-weight: bold;
-    /* display: inline-block */
+    display: inline-block;
     padding: 27px 0 0 0;
 }
 .main_tap_event_wrapper .quick_link .quick_link_content .store a >strong {
@@ -260,11 +261,34 @@ div.quick_link_content div.store a {
     display: block;
 }
 .main_tap_event_wrapper .quick_link .quick_link_content .store a >strong::before {
-    /* background: url(../images/icon_map.png) 0 0 no-repeat; */
-    background: url(../images/icon_map.png);
+    background: url(../images/icon_map.png) 0 0 no-repeat;
     width: 24px;
     height: 30px;
 }
+.main_tap_event_wrapper .quick_link .quick_link_content >div a >strong:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 13px;
+    position: relative;
+    top: -2px;
+}
+/*franchise*/
+.main_tap_event_wrapper .quick_link .quick_link_content .franchise a {
+    background-color: #009223;
+    border-radius: 0 0 30px 0;
+    float: left;
+    letter-spacing:  -0.05em;
+}
+.main_tap_event_wrapper .quick_link .quick_link_content .franchise a >strong {
+    color: #ffffff;
+}
+.main_tap_event_wrapper .quick_link .quick_link_content .franchise a >strong::before {
+    background: url(../images/icon_franchise.png) 0 0 no-repeat;
+    width: 34px;
+    height: 30px;
+}
+/**quick_link end**/
 
 /***footer***/
 footer {
