@@ -205,7 +205,66 @@ main >section.main_tap_event_wrapper {
     height: 490px;
     background-color: #fff;;
 }
-
+/***quick_link***/
+main >section >article.quick_link {
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 1170px;
+    margin-left: -585px;
+    text-align: right;
+    z-index: 5;
+}
+main >section >article.quick_link >div.quick_link_content {
+    overflow: hidden;
+    float: right;
+    display: table;
+}
+div.quick_link_content >div.store {
+    display: table-cell;
+    vertical-align: bottom;
+    height: 80px;
+}
+.main_tap_event_wrapper .quick_link .quick_link_content .store a {
+    display: block;
+    width: 300px;
+    height: 80px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+div.quick_link_content div.store a {
+    background-color: #ffce32;
+    border-radius: 30px 0 0 0;
+    float: right;
+    transition-duration: 0.2s;
+    letter-spacing: -0.02em;
+}
+.main_tap_event_wrapper .quick_link .quick_link_content >div a {
+    display: block;
+    width: 300px;
+    height: 80px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.main_tap_event_wrapper .quick_link .quick_link_content >div a >strong {
+    font-size: 22px;
+    font-weight: bold;
+    /* display: inline-block */
+    padding: 27px 0 0 0;
+}
+.main_tap_event_wrapper .quick_link .quick_link_content .store a >strong {
+    color: #292929;
+    display: block;
+}
+.main_tap_event_wrapper .quick_link .quick_link_content .store a >strong::before {
+    /* background: url(../images/icon_map.png) 0 0 no-repeat; */
+    background: url(../images/icon_map.png);
+    width: 24px;
+    height: 30px;
+}
 
 /***footer***/
 footer {
