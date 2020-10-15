@@ -33,6 +33,10 @@ a {
     color: #333;
     cursor: pointer;
 }
+img {
+    vertical-align: top;
+    border: 0;
+}
 nav {
     display: block;
 }
@@ -289,6 +293,156 @@ div.quick_link_content div.store a {
     height: 30px;
 }
 /**quick_link end**/
+
+/**section_subway_menu**/
+section.section_subway_menu {
+    background-color: #fff;
+    padding: 60px 0 0;
+    height: 560px;
+}
+section.section_subway_menu >article.hd {
+    width: 1170px;
+    margin: 0 auto;
+    padding-bottom: 33px;
+    position: relative;
+}
+section.section_subway_menu >article.hd h2 {
+    color: #292929;
+    font-size: 40px;
+    font-weight: bold;
+    background: url(../images/bul_tit.png) 0 12px no-repeat;
+    min-height: 60px;
+    padding: 17px 0 0 25px;
+    margin-bottom: 1px;
+}
+section.section_subway_menu >article.hd div.tab {
+    position: absolute;
+    right: 0;
+    top: 44px;
+}
+section.section_subway_menu >article.hd div.tab ul {
+    /* overflow: hidden; */
+}
+section.section_subway_menu >article.hd div.tab ul li {
+    float: left;
+    position: relative;
+    margin-left: 23px;
+    padding: 0 0 0 25px;
+}
+section.section_subway_menu >article.hd div.tab ul li:first-child {
+    padding: 0;
+    margin: 0;
+}
+section.section_subway_menu >article.hd div.tab ul li a {
+    display: block;
+    font-size: 16px;
+    color: #666666;
+    font-weight: 300;
+    letter-spacing: -0.03em;
+}
+/*li.acive javaScript로 구현*/
+section.section_subway_menu >article.hd div.tab ul li.acive a {
+    color: #009223;
+    font-weight: bold;
+}
+section.section_subway_menu >article.hd div.tab ul li:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 1px;
+    height: 15px;
+    background-color: #dddddd;
+}
+.section_subway_menu .hd .tab ul li:first-child:after {
+    display: none;
+}
+.section_subway_menu >article.subway_menu_slider_wrapper {
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+}
+.section_subway_menu >article.subway_menu_slider_wrapper div.subway_menu_slider {
+    height: 320px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+}
+/**section_subway**/
+section.section_subway {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+section.section_subway >article.content_top {
+    overflow: hidden;
+}
+section.section_subway >article.content_top div.utilization {
+    background: url(../images/bg_utilization.png) 0 0 no-repeat;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    margin-left: 55px;
+    float: left;
+}
+section.section_subway >article.content_top div.utilization p {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    position: absolute;
+    left: 39px;
+    top: 38px;
+}
+.btn {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    /* border-radius: 30px; */
+    transition-duration: 0.2s;
+}
+.btn span {
+    display: inline-block;
+    vertical-align: middle;
+    height: 46px;
+    line-height: 46px;
+}
+.section_subway .content_top .history .btn {
+    position: absolute;
+    left: 41px;
+    bottom: 42px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    width: 92px;
+}
+.section_subway .content_top .history .btn span {
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+section.section_subway >article.content_top div.history {
+    float: left;
+    width: 825px;
+    position: relative;
+}
+section.section_subway >article.content_top div.history p {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    position: absolute;
+    left: 410px;
+    top: 38px;
+}
+/* 이용방법, 서브웨이 역사  버튼  수정하기 */
 
 /***footer***/
 footer {
