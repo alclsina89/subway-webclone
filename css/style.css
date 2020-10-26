@@ -47,12 +47,20 @@ div#wrap{
 }
 header {
     border-top: 5px solid #009233;
+    overflow: hidden;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
+    height: 165px;
     z-index: 99;
-    min-height: 1280px;
+    background-color: #fff;
+    /*  
+        바록 직전에 commit 한 곳에서는
+        min-height: 1280px;
+        로 해놔서 height 생기고 z-index: 99; 를 적용하다보니 메인 태그가 덮혀서 nav목록들이 화면에서 hidden 처리가 안됐었음.
+    */
+    min-width: 1280px;
 }
 header::after {
     content: '';
@@ -207,7 +215,8 @@ main#container {
 main >section.main_tap_event_wrapper {
     position: relative;
     height: 490px;
-    background-color: #fff;;
+    /* background-color: #fff; */
+    background-color: #000;
 }
 /***quick_link***/
 main >section >article.quick_link {
